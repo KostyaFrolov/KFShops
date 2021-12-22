@@ -13,7 +13,7 @@
 
 <body>
 
-    <header class="header">
+    <header id="header" class="header">
         <div class="header__top">
             <div class="container">
                 <a class="header__phone" href="#">+375291046687</a>
@@ -24,16 +24,15 @@
             <div class="container">
                 <div class="header__content-inner">
                     <div class="header__logo">
-                        <a href="#">
+                        <a href="./index.html">
                             <img src="img/logo.png" alt="">
                         </a>
                     </div>
 
                     <nav class="menu">
                         <ul>
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">Admin</a></li>
-                            <li><a href="reg.html">Sign In</a></li>
+                            <li><a href="./index.html">Shop</a></li>
+                            <li><a href="registration.html">Sign In</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -45,30 +44,30 @@
 
     <main class="main">
 
-        <div class="sector">
-            <div class="plita">
-                    <ul>
-                        <li>
-                            <a class="izb1" href="Fut1.html">
-                                <img src="img/black-t-shirt.jpg" width="280px" height="280px">
-                            </a>
-                        </li>
-                        <li>
-                            <a class="izb2" href="Fut2.html">
-                                <img src="img/ShZ6v4oInd0.jpg" width="280px" height="280px">
-                            </a>
-                        </li>
-                        <li>
-                            <a class="izb3" href="Fut3.html">
-                                <img src="img/cKo1CSIV0qY.jpg" width="280px" height="280px">
-                            </a>
-                        </li>
-                        <li>
-                            <a class="izb4" href="Fut4.html">
-                                <img src="img/xjZV5eVmwng.jpg" width="280px" height="280px">
-                            </a>
-                        </li>
-                    </ul>
+        <div id="sector" class="sector">
+            <div class="product__area">
+                <ul>
+                    <li>
+                        <a class="black-t-shirt" href="#black-t-shirt__popup">
+                            <img src="img/black-t-shirt.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="white-t-shirt" href="#white-t-shirt__popup">
+                            <img src="img/white-t-shirt.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="black-hoodie" href="#black-hoodie__popup">
+                            <img src="img/black-hoodie.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="white-hoodie" href="#white-hoodie__popup">
+                            <img src="img/white-hoodie.jpg">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -96,8 +95,96 @@
 
             </div>
         </div>
-        
+
     </footer>
+
+
+
+    <div id="black-t-shirt__popup" class="popup">
+        <a href="#header" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close">X</a>
+                <img src="img/black-t-shirt.jpg" alt="black-t-shirt" class="product__img">
+                <div class="product">
+                    <div class="product__title">Покупка товара</div>
+                    <div class="product__description">
+                        <p>Черная футболка KF</p>
+                    </div>
+                </div>
+                <a href="#purchase__popup" class="product__purchase">Купить</a>
+            </div>
+        </div>
+    </div>
+    <div id="white-t-shirt__popup" class="popup">
+        <a href="#header" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close">X</a>
+                <img src="img/white-t-shirt.jpg" alt="white-t-shirt" class="product__img">
+                <div class="product">
+                    <div class="product__title">Покупка товара</div>
+                    <div class="product__description">
+                        <p>Белая футоболка KF</p>
+                    </div>
+                </div>
+                <a href="#purchase__popup" class="product__purchase">Купить</a>
+            </div>
+        </div>
+    </div>
+    <div id="black-hoodie__popup" class="popup">
+        <a href="#header" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close">X</a>
+                <img src="img/black-hoodie.jpg" alt="black-hoodie" class="product__img">
+                <div class="product">
+                    <div class="product__title">Покупка товара</div>
+                    <div class="product__description">
+                        <p>Черная толстовка KF</p>
+                    </div>
+                </div>
+                <a href="#purchase__popup" class="product__purchase">Купить</a>
+            </div>
+        </div>
+    </div>
+    <div id="white-hoodie__popup" class="popup">
+        <a href="#header" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close">X</a>
+                <img src="img/white-hoodie.jpg" alt="white-hoodie" class="product__img">
+                <div class="product">
+                    <div class="product__title">Покупка товара</div>
+                    <div class="product__description">
+                        <p>Белая толстовка KF</p>
+                    </div>
+                </div>
+
+                <a href="#purchase__popup" class="product__purchase">Купить</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="purchase__popup" class="purchase__popup">
+        <a href="#header" class="popup__area"></a>
+        <div class="purchase__popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close">X</a>
+                <div class="purchase__product">
+                    <div class="product__title">Спасибо за покупку!</div>
+                    <div class="product__description">
+                        <p>Пользователь:</p>
+                        <p>Товар будет доставлен по адресу:</p>
+                    </div>
+                </div>
+                <a href="#header" class="confirm">Подтвердить</a>
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
 
 </html>

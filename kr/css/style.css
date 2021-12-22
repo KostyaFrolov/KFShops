@@ -1,200 +1,365 @@
-html{
-    overflow: hidden;
-}
-*{
+* {
     box-sizing: border-box;
 }
-a{
+
+a {
     text-decoration: none;
     display: inline-block;
 }
+
 ul,
-li{
+li {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.container{
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-body{
+body {
     background-color: #EDEDED;
 }
-.header__top{
+
+.header {
+    position: fixed;
+    width: 100%;
+}
+
+.header__top {
     background-color: #000000;
 }
-.header__email{
+
+.header__email {
     float: right;
 }
+
 .header__phone,
-.header__email{
+.header__email {
     color: #EDEDED;
     letter-spacing: 0.2px;
     line-height: 40px;
     position: relative;
 }
-.header__phone{
+
+.header__phone {
     padding-left: 20px;
 }
-.header__phone::before{
+
+.header__phone::before {
     content: "\f098";
     font-family: 'icomoon';
     position: absolute;
     left: 0;
     color: #EDEDED;
 }
-.header__email{
+
+.header__email {
     padding-left: 24px;
 }
-.header__email::before{
+
+.header__email::before {
     content: "\f0e0";
     font-family: 'icomoon';
     position: absolute;
     left: 0;
     color: #EDEDED;
 }
-.header__content{
+
+.header__content {
     background-color: #0F0F0F;
     padding: 16px 0px 4px;
 }
-.header__content-inner{
+
+.header__content-inner {
     display: flex;
     justify-content: space-between;
 }
-.menu li{
+
+.menu li {
     display: inline-block;
 }
-.menu a{
+
+.menu a {
     color: #EDEDED;
     font-size: 16px;
     border: 1px solid transparent;
     padding: 4px 16px;
     transition: all .2s;
 }
-.menu a:hover{
+
+.menu a:hover {
     border-color: #EDEDED;
 }
-.menu li + li{
+
+.menu li+li {
     padding-left: 0px;
 }
 
-
-
-
-
-.sector{
+main .sector {
     background-image: url(../img/background-img);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 761px;
+    min-height: 853px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
-
-
-.plita {
+.product__area {
     width: 1200px;
     height: 305px;
-    position: absolute;
-    top: 40%;
-    left: 25%;
-    margin: -125px 0 0 -125px;
     background-color: rgb(80, 80, 80);
-
-
 }
 
-.plita li{
+.product__area li {
     display: inline-block;
 }
-.izb1{
+
+.black-t-shirt {
     border: 4px solid transparent;
     transition: all .2s;
     margin: 10px 0px 0px 15px;
 }
-.izb1:hover{
+
+.black-t-shirt img {
+    width: 280px;
+    height: 280px;
+}
+
+.black-t-shirt:hover {
     border-color: #0F0F0F;
 }
-.izb2{
+
+.white-t-shirt {
     border: 3px solid transparent;
     transition: all .2s;
     margin-left: 4px;
 }
 
-.izb2:hover{
+.white-t-shirt img {
+    width: 280px;
+    height: 280px;
+}
+
+.white-t-shirt:hover {
     border-color: #EDEDED;
 }
 
-.izb3{
+.black-hoodie {
     border: 4px solid transparent;
     transition: all .2s;
     margin-left: 4px;
 }
-.izb3:hover{
+
+.black-hoodie img {
+    width: 280px;
+    height: 280px;
+}
+
+.black-hoodie:hover {
     border-color: #0F0F0F;
 }
-.izb4{
+
+.white-hoodie {
     border: 3px solid transparent;
     transition: all .2s;
     margin-left: 4px;
 }
-.izb4:hover{
+
+.white-hoodie img {
+    width: 280px;
+    height: 280px;
+}
+
+.white-hoodie:hover {
     border-color: #EDEDED;
 }
 
-
-
-
-.footer__content{
+.footer__content {
     background-color: #0F0F0F;
     padding: 20px 0px 0px;
 }
-.footer__inner{
+
+.footer__inner {
     display: flex;
     justify-content: space-between;
 }
-.footer__title{
+
+.footer__title {
     font-weight: 500;
     font-size: 16px;
     color: #EDEDED;
     line-height: 28px;
     letter-spacing: 0.5px;
 }
-.footer__text{
-    color:  #C0C0C0;
+
+.footer__text {
+    color: #C0C0C0;
     margin-bottom: 20px;
 }
-.footer__list{
+
+.footer__list {
     float: right;
 }
-.footer__phone:before{
+
+.footer__phone:before {
     content: "\f098";
     font-family: 'icomoon';
     position: absolute;
     left: 0;
     color: #EDEDED;
 }
-.footer__email:before{
+
+.footer__email:before {
     content: "\f0e0";
     font-family: 'icomoon';
     position: absolute;
     left: 0;
     color: #EDEDED;
 }
-.footer__list a{
+
+.footer__list a {
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.2px;
-    color:#EDEDED;
+    color: #EDEDED;
     padding-left: 22px;
     position: relative;
 }
 
-.p{
+.p {
     font-size: large;
 }
 
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup__area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.popup__content {
+    background-color: #EDEDED;
+    color: #0F0F0F;
+    width: 800px;
+    height: 270px;
+    padding: 20px;
+    position: relative;
+}
+
+.popup__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 16px;
+    background-color: #0F0F0F;
+    color: #EDEDED;
+    padding: 0px 3px;
+}
+
+.product__img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 250px;
+    height: 250px;
+    border: 4px solid transparent;
+    border-color: #0F0F0F;
+}
+
+.product {
+    float: right;
+    margin-right: 330px;
+}
+
+.product__title {
+    font-size: 20px;
+}
+
+.product__purchase {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 8px 20px;
+    font-size: 16px;
+    color: #0F0F0F;
+    border: 1px solid transparent;
+    border-color: #0F0F0F;
+    transition: .2s;
+}
+
+.product__purchase:hover {
+    color: #EDEDED;
+    background-color: #0F0F0F;
+}
+
+.purchase__popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.purchase__popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.confirm {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 8px 20px;
+    font-size: 16px;
+    color: #0F0F0F;
+    border: 1px solid transparent;
+    border-color: #0F0F0F;
+    transition: .2s;
+}
+
+.confirm:hover {
+    color: #EDEDED;
+    background-color: #0F0F0F;
+}
+
+.purchase__popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
